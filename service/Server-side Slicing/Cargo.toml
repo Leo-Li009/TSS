@@ -1,0 +1,42 @@
+[package]
+name = "test3"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# [lib]
+# crate-type = ["cdylib","rlib"]
+
+
+
+
+[dependencies]
+getrandom = { version = "0.2", features = ["js"] }
+wasm-bindgen = "0.2.84"
+
+anyhow="1.0.51"
+curv-kzen = { version = "0.10.0", default-features = false }
+round-based = { version = "0.1.4", features = ["dev"] }
+structopt="0.3.23"
+rocket = { version = "0.5.0-rc.1", default-features = false, features = ["json"] }
+rand_chacha = "0.3.1"
+rand = "0.8.5"
+tokio = { version = "1",features = ["full"] }
+#cggmp-threshold-ecdsa={ git = "https://github.com/webb-tools/cggmp-threshold-ecdsa.git",default-features = false }
+futures="0.3.18"
+serde = { version = "1.0", features = ["derive"] }
+surf="2.3.1"
+async-sse="5.1.0"
+serde_json="1.0.70"
+hex = "0.4.3"
+web3="0.18.0"
+rlp="0.5.2"
+#fs-dkr={git="https://github.com/ZenGo-X/fs-dkr.git",default-features = false}
+
+rustix="0.37.11"
+
+
+[dependencies.multi-party-ecdsa]
+git = "https://github.com/webb-tools/multi-party-ecdsa"
+default-features = false
