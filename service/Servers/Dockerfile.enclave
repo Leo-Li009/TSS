@@ -1,0 +1,15 @@
+FROM amazonlinux as enclave-signer
+
+RUN mkdir /app
+WORKDIR /app
+
+COPY ./Rocket.toml ./
+COPY ./Cargo.toml ./
+ADD ./src ./src
+
+RUN yum -y install gcc openssl-devel
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
+ENV PATH "$PATH:/root/.cargo/bin"
+
+RUN cargo build  --release --no-default-features  --features curv-kzen/num-bigint
+CMD ./target/release/servers
