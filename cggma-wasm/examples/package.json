@@ -1,8 +1,0 @@
-{
-    "name": "hardhat-project",
-    "type": "module",
-    "dependencies": {
-        "@leo-003/cggmp-wasm": "^0.1.4",
-        "fs": "^0.0.1-security"
-    }
-}
