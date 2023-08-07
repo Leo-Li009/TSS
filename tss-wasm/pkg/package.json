@@ -1,0 +1,18 @@
+{
+  "name": "@leo-003/cggmp-wasm",
+  "description": "Webassembly bindings to CGGMP multi-party-ecdsa",
+  "version": "0.2.1-blunder",
+  "license": "MIT",
+  "files": [
+    "cggmp_wasm_bg.wasm",
+    "cggmp_wasm.js",
+    "cggmp_wasm_bg.js",
+    "cggmp_wasm.d.ts"
+  ],
+  "module": "cggmp_wasm.js",
+  "types": "cggmp_wasm.d.ts",
+  "sideEffects": [
+    "./cggmp_wasm.js",
+    "./snippets/*"
+  ]
+}

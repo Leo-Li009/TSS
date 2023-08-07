@@ -1,0 +1,15 @@
+{
+    "name": "hardhat-project",
+    "type": "module",
+    "scripts": {
+        "build": "webpack"
+    },
+    "dependencies": {
+        "@leo-003/cggmp-wasm": "^0.2.0",
+        "@mempool/mempool.js": "^2.3.0",
+        "bitcoinjs-lib": "file:../../../bitcoinjs-lib",
+        "ethers": "^5.7.2",
+        "fs": "^0.0.1-security",
+        "mathjs": "^11.9.1"
+    }
+}
